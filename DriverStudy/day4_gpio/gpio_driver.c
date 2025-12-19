@@ -13,7 +13,7 @@ static struct class *my_class;
 static struct cdev my_device;
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("ilfpns");
+MODULE_AUTHOR("ysh");
 MODULE_DESCRIPTION("Control Led, input Button");
 
 /* open */
