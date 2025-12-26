@@ -1,1 +1,0 @@
-savedcmd_/DriverStudy/day4_gpio/read_write.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/arm64/module.lds -o /DriverStudy/day4_gpio/read_write.ko /DriverStudy/day4_gpio/read_write.o /DriverStudy/day4_gpio/read_write.mod.o /DriverStudy/day4_gpio/.module-common.o
