@@ -31,11 +31,17 @@ static const struct of_device_id my_led_of_match[] = {
 MODULE_DEVICE_TABLE(of, my_led_of_match);
 
 static struct platform_driver my_led_driver = {
+	.probe = my_led_probe,
+	.remove = my_led_remove,
+	.driver = {
+		.name = "my-gpio-led",
+		.of_match_table = my_led_of_match,
+	,
+};
 
-
-}
+module_playform_driver(my_led_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("you");
-MODULE_DESCRIPTION("Simple char driver with read/write");
+MODULE_AUTHOR("ilfpns");
+MODULE_DESCRIPTION("Control LED");
 
