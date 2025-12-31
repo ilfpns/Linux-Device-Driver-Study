@@ -5,6 +5,7 @@
 #include <linux/platform_device.h>
 #include <linux/of.h>
 #include <linux/of_device.h>
+#include <linux/minmax.h>
 
 #include <linux/gpio/consumer.h>
 
@@ -12,13 +13,22 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("ilfpns");
 MODULE_DESCRIPTION("Control LED");
 
+static int driver_open(struct inode *, struct file *);
+static int driver_close(struct inode *, struct file *);
+static ssize_t driver_read(struct file *, char __user *, size_t, loff_t *);
+static ssize_t driver_write(struct file *, const char __user *, size_t, loff_t *);
+
+static char buffer[256];
+static size_t buffer_pointer;
+
 static struct file_operations fops = {
 	.owner = THIS_MODULE,
 	.open = driver_open,
 	.release = driver_close,
 	.read = driver_read,
 	.write = driver_write
-}
+};
+
 // open & close
 static int driver_open (struct inode *Inode, struct file *File) {
 	printk("파일 드라이버 열림!\n");
@@ -31,7 +41,7 @@ static int driver_close (struct inode *Inode, struct file *File) {
 }
 
 // read & write
-ssize_t driver_read (struct file *File, char user *user_buffer, size_t count, loff_t *offs) {
+ssize_t driver_read (struct file *File, char __user *user_buffer, size_t count, loff_t *offs) {
 	int to_copy, not_copied, delta;
 
 	to_copy = min(count, buffer_pointer);
@@ -66,6 +76,4 @@ static void __exit driver_exit(void) {
 }
 
 module_init(driver_init);
-module_eixt(driver_eixt);
-
-MODULE_LICENSE("GPL");
+module_eixt(driver_exit);
