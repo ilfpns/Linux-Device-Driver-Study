@@ -1,1 +1,1 @@
-savedcmd_/DriverStudy/day3/modules.order := {   echo /DriverStudy/day3/read_write.o; :; } > /DriverStudy/day3/modules.order
+savedcmd_/rpi-driver-study/DriverStudy/day4/modules.order := {   echo /rpi-driver-study/DriverStudy/day4/gpio_driver.o; :; } > /rpi-driver-study/DriverStudy/day4/modules.order

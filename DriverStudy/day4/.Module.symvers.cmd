@@ -1,1 +1,1 @@
-savedcmd_/DriverStudy/day3/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /DriverStudy/day3/Module.symvers -n -T /DriverStudy/day3/modules.order -i Module.symvers -e 
+savedcmd_/rpi-driver-study/DriverStudy/day4/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /rpi-driver-study/DriverStudy/day4/Module.symvers -n -T /rpi-driver-study/DriverStudy/day4/modules.order -i Module.symvers -e 

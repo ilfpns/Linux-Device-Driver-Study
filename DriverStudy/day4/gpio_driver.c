@@ -1,8 +1,12 @@
 #include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/uaccess.h>
+#include <linux/kernel.h>
+#include <linux/init.h>
+
+#include <linux/platform_device.h>
+#include <linux/of.h>
+#include <linux/of_device.h>
+
+#include <linux/gpio/consumer.h>
 
 static struct gpio_desc *led;
 
@@ -11,7 +15,7 @@ static int my_led_probe(struct platform_device *pdev) {
 
 	pr_info("gpio-led: probe");
 
-	led = devm_gpiod_get(dev, NULL, GPIOD_OUT LOW);
+	led = devm_gpiod_get(dev, NULL, GPIOD_OUT_LOW);
 	if (IS_ERR(led)) {
 		return PTR_ERR(led);
 	}
@@ -36,10 +40,10 @@ static struct platform_driver my_led_driver = {
 	.driver = {
 		.name = "my-gpio-led",
 		.of_match_table = my_led_of_match,
-	,
+	},
 };
 
-module_playform_driver(my_led_driver);
+module_platform_driver(my_led_driver);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("ilfpns");
