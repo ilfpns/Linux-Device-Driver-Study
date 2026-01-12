@@ -1,7 +1,12 @@
 #include <linux/module.h>
+#include <linux/wait.h>
+#include <linux/sched.h>
 #include <linux/kernel.h>
 #include <linux/init.h>
 #include <linux/cdev.h>
+#include <linux/kthread.h>
+#include <linux/time.h>
+#include <linux/timer.h>
 
 #include <linux/platform_device.h>
 #include <linux/of.h>
@@ -21,6 +26,9 @@ static int driver_open(struct inode *, struct file *);
 static int driver_close(struct inode *, struct file *);
 static ssize_t driver_read(struct file *, char __user *, size_t, loff_t *);
 static ssize_t driver_write(struct file *, const char __user *, size_t, loff_t *);
+
+static wait_queue_head_t wq;
+static int data_ready = 0;
 
 static dev_t my_device_nr;
 static struct class *my_class;
@@ -51,12 +59,20 @@ static int driver_close (struct inode *Inode, struct file *File) {
 // read & write
 ssize_t driver_read (struct file *File, char __user *user_buffer, size_t count, loff_t *offs) {
 	int to_copy, not_copied, delta;
+	int ret;
+	
+	ret = wait_event_interruptible(wq, data_ready == 1);
+	if (ret) {
+		return ret;
+	}
 
 	to_copy = min(count, buffer_pointer);
 	not_copied = copy_to_user(user_buffer, buffer, to_copy);
 	
 	delta = to_copy - not_copied;
 	printk("테스트 드라이버 Read함수 \n");
+	
+	data_ready = 0;
 	return delta;
 }
 
@@ -76,7 +92,10 @@ static ssize_t driver_write(struct file *File, const char *user_buffer, size_t c
 // init & exit
 static int __init my_driver_init(void) {
 	printk("드이버 초기화\n");
-	
+
+	init_waitqueue_head(&wq);
+	data_ready = 0;
+
 	// major, minor 값 받아오기
 	if (alloc_chrdev_region(&my_device_nr, 0, 1, DRIVER_NAME) < 0 ) {
 		printk("allocated 실패 \n");
