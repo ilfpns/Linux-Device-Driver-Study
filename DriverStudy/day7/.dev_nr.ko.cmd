@@ -1,0 +1,1 @@
+savedcmd_/DriverStudy/day2/dev_nr.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/arm64/module.lds -o /DriverStudy/day2/dev_nr.ko /DriverStudy/day2/dev_nr.o /DriverStudy/day2/dev_nr.mod.o /DriverStudy/day2/.module-common.o

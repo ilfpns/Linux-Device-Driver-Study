@@ -1,0 +1,1 @@
+savedcmd_/rpi-driver-study/DriverStudy/day5/open_write.mod := printf '%s\n'   open_write.o | awk '!x[$$0]++ { print("/rpi-driver-study/DriverStudy/day5/"$$0) }' > /rpi-driver-study/DriverStudy/day5/open_write.mod
