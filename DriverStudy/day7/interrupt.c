@@ -86,6 +86,11 @@ static ssize_t driver_write(struct file *File, const char *user_buffer, size_t c
 	delta = to_copy - not_copied;
 	printk("테스트 드라이버 write함수 \n");
 
+	if (delta > 0) {
+		data_ready = 1;
+		wake_up_interruptible(&wq);
+	}
+
 	return delta;
 }
 

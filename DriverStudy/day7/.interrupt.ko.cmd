@@ -1,0 +1,1 @@
+savedcmd_/rpi-driver-study/DriverStudy/day7/interrupt.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/arm64/module.lds -o /rpi-driver-study/DriverStudy/day7/interrupt.ko /rpi-driver-study/DriverStudy/day7/interrupt.o /rpi-driver-study/DriverStudy/day7/interrupt.mod.o /rpi-driver-study/DriverStudy/day7/.module-common.o
