@@ -63,6 +63,7 @@ ssize_t driver_read (struct file *File, char __user *user_buffer, size_t count, 
 	
 	ret = wait_event_interruptible(wq, data_ready == 1);
 	if (ret) {
+		printk("모듈 자는중\n");
 		return ret;
 	}
 
@@ -87,6 +88,7 @@ static ssize_t driver_write(struct file *File, const char *user_buffer, size_t c
 	printk("테스트 드라이버 write함수 \n");
 
 	if (delta > 0) {
+		printk("모듈 깨우기 시작\n");
 		data_ready = 1;
 		wake_up_interruptible(&wq);
 	}
