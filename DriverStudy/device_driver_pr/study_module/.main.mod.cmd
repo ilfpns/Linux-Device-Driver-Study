@@ -1,0 +1,1 @@
+savedcmd_/rpi-driver-study/DriverStudy/device_driver_pr/study_module/main.mod := printf '%s\n'   main.o | awk '!x[$$0]++ { print("/rpi-driver-study/DriverStudy/device_driver_pr/study_module/"$$0) }' > /rpi-driver-study/DriverStudy/device_driver_pr/study_module/main.mod

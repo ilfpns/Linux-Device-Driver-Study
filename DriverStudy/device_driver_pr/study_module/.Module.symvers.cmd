@@ -1,0 +1,1 @@
+savedcmd_/rpi-driver-study/DriverStudy/device_driver_pr/study_module/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /rpi-driver-study/DriverStudy/device_driver_pr/study_module/Module.symvers -n -T /rpi-driver-study/DriverStudy/device_driver_pr/study_module/modules.order -i Module.symvers -e 
