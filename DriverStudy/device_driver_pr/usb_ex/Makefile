@@ -1,4 +1,4 @@
-obj-m += pb.o
+obj-m += usb.o
 
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
