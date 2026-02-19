@@ -1,4 +1,4 @@
-# Linux-Device-Driver-Study
+# Linux-Device-Driver
 
 리눅스 디바이스 드라이버 관련 코드를 연습합니다.
 
