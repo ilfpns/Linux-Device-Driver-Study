@@ -69,8 +69,9 @@ exit:
 }
 
 static int __init nr_init (void) {
-	printk("모듈 올리기 성공\n");
-	return 0;
+	int retval = 0;
+	printk("fops init 성공"\n");
+	return retval;
 }
 
 static void __exit nr_exit (void) {

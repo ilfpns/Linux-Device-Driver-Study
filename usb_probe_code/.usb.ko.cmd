@@ -1,0 +1,1 @@
+savedcmd_/Project/usb_probe_code/usb.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/arm64/module.lds -o /Project/usb_probe_code/usb.ko /Project/usb_probe_code/usb.o /Project/usb_probe_code/usb.mod.o /Project/usb_probe_code/.module-common.o

@@ -18,11 +18,18 @@ __section(".gnu.linkonce.this_module") = {
 
 static const struct modversion_info ____versions[]
 __used __section("__versions") = {
+	{ 0xa728742c, "usb_register_driver" },
+	{ 0x37a0cba, "kfree" },
+	{ 0x93c7edeb, "usb_find_common_endpoints" },
 	{ 0x92997ed8, "_printk" },
+	{ 0xf0fdf6cb, "__stack_chk_fail" },
+	{ 0x1e5b8225, "usb_deregister" },
+	{ 0xc4a913aa, "__kmalloc_cache_noprof" },
+	{ 0x9f1dc8c6, "kmalloc_caches" },
 	{ 0x474e54d2, "module_layout" },
 };
 
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "E3ECA62DFFE631E9ABDB68C");
+MODULE_INFO(srcversion, "C415E12A188935F13D7EEDC");

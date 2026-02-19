@@ -1,24 +1,12 @@
 #include <linux/module.h>
 #include <linux/types.h>
+#include "driver.h"
 #include <linux/init.h>
-#include <linux/of.h>
 #include <linux/kernel.h>
-#include <linux/platform_device.h>
 #include <linux/usb.h>
 #include <linux/slab.h>
 
-MODULE_LICENSE("GPL");
-MODULE_AUTHOR("ilfpns");
-
-static int usb_probe(struct usb_interface *interface, const struct usb_device_id *id);
-static void usb_disconnect(struct usb_interface *interface);
-
-struct usb_pack {
-	__u8 bulk_in;
-	__u8 bulk_out;
-};
-
-static int usb_probe(struct usb_interface *interface, const struct usb_device_id *id) {
+int usb_probe(struct usb_interface *interface, const struct usb_device_id *id) {
 	struct usb_device *udev;
 	struct usb_endpoint_descriptor *bulk_in = NULL;  // USB에서 들어오는 bulk data 저장
 	struct usb_endpoint_descriptor *bulk_out = NULL; // USB로 나가는 bulk data 저
@@ -55,7 +43,7 @@ static int usb_probe(struct usb_interface *interface, const struct usb_device_id
 	return 0;
 }
 
-static void usb_disconnect(struct usb_interface *interface) {
+void usb_disconnect(struct usb_interface *interface) {
 	struct usb_pack *my_usb_pack;
 	my_usb_pack = usb_get_intfdata(interface);
 
@@ -63,11 +51,3 @@ static void usb_disconnect(struct usb_interface *interface) {
 	usb_set_intfdata(interface, NULL);
 	pr_info("USB 연결 해제 및 메모리 해제\n");	
 }
-
-static struct usb_driver usb_skel_driver = {
-	.name       = "USB Skel",
-	.probe      = usb_probe,
-	.disconnect = usb_disconnect,
-};
-
-module_usb_driver(usb_skel_driver);

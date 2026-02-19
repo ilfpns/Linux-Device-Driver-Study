@@ -1,10 +1,8 @@
-savedcmd_/rpi-driver-study/DriverStudy/device_driver_pr/probe_module/.module-common.o :=  aarch64-linux-gnu-gcc-14 -Wp,-MMD,/rpi-driver-study/DriverStudy/device_driver_pr/probe_module/..module-common.o.d -nostdinc -I/usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include -I./arch/arm64/include/generated -I/usr/src/linux-headers-6.12.47+rpt-common-rpi/include -I./include -I/usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I/usr/src/linux-headers-6.12.47+rpt-common-rpi/include/uapi -I./include/generated/uapi -include /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/compiler-version.h -include /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/kconfig.h -include /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -DCC_USING_PATCHABLE_FUNCTION_ENTRY -DKASAN_SHADOW_SCALE_SHIFT= -fmacro-prefix-map=/usr/src/linux-headers-6.12.47+rpt-common-rpi/= -std=gnu11 -fshort-wchar -funsigned-char -fno-common -fno-PIE -fno-strict-aliasing -mgeneral-regs-only -DCONFIG_CC_HAS_K_CONSTRAINT=1 -Wno-psabi -mabi=lp64 -fno-asynchronous-unwind-tables -fno-unwind-tables -mbranch-protection=pac-ret -Wa,-march=armv8.5-a -DARM64_ASM_ARCH='"armv8.5-a"' -DKASAN_SHADOW_SCALE_SHIFT= -fno-delete-null-pointer-checks -O2 -fno-allow-store-data-races -fstack-protector-strong -fno-omit-frame-pointer -fno-optimize-sibling-calls -ftrivial-auto-var-init=zero -fno-stack-clash-protection -fpatchable-function-entry=4,2 -fmin-function-alignment=8 -fstrict-flex-arrays=3 -fno-strict-overflow -fno-stack-check -fconserve-stack -fno-builtin-wcslen -fno-builtin-wcslen -Wall -Wextra -Wundef -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Werror=strict-prototypes -Wno-format-security -Wno-trigraphs -Wno-frame-address -Wno-address-of-packed-member -Wmissing-declarations -Wmissing-prototypes -Wframe-larger-than=2048 -Wno-main -Wno-dangling-pointer -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-array-bounds -Wno-stringop-overflow -Wno-alloc-size-larger-than -Wimplicit-fallthrough=5 -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wenum-conversion -Wunused -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-packed-not-aligned -Wno-format-overflow -Wno-format-truncation -Wno-stringop-truncation -Wno-override-init -Wno-missing-field-initializers -Wno-type-limits -Wno-shift-negative-value -Wno-maybe-uninitialized -Wno-sign-compare -Wno-unused-parameter -mstack-protector-guard=sysreg -mstack-protector-guard-reg=sp_el0 -mstack-protector-guard-offset=1424 -DMODULE -DKBUILD_BASENAME='".module_common"' -DKBUILD_MODNAME='".module_common.o"' -D__KBUILD_MODNAME=kmod_.module_common.o -c -o /rpi-driver-study/DriverStudy/device_driver_pr/probe_module/.module-common.o /usr/src/linux-headers-6.12.47+rpt-common-rpi/scripts/module-common.c
+savedcmd_/Project/usb_probe_code/main.o :=  aarch64-linux-gnu-gcc-14 -Wp,-MMD,/Project/usb_probe_code/.main.o.d -nostdinc -I/usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include -I./arch/arm64/include/generated -I/usr/src/linux-headers-6.12.47+rpt-common-rpi/include -I./include -I/usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I/usr/src/linux-headers-6.12.47+rpt-common-rpi/include/uapi -I./include/generated/uapi -include /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/compiler-version.h -include /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/kconfig.h -include /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -DCC_USING_PATCHABLE_FUNCTION_ENTRY -DKASAN_SHADOW_SCALE_SHIFT= -fmacro-prefix-map=/usr/src/linux-headers-6.12.47+rpt-common-rpi/= -std=gnu11 -fshort-wchar -funsigned-char -fno-common -fno-PIE -fno-strict-aliasing -mgeneral-regs-only -DCONFIG_CC_HAS_K_CONSTRAINT=1 -Wno-psabi -mabi=lp64 -fno-asynchronous-unwind-tables -fno-unwind-tables -mbranch-protection=pac-ret -Wa,-march=armv8.5-a -DARM64_ASM_ARCH='"armv8.5-a"' -DKASAN_SHADOW_SCALE_SHIFT= -fno-delete-null-pointer-checks -O2 -fno-allow-store-data-races -fstack-protector-strong -fno-omit-frame-pointer -fno-optimize-sibling-calls -ftrivial-auto-var-init=zero -fno-stack-clash-protection -fpatchable-function-entry=4,2 -fmin-function-alignment=8 -fstrict-flex-arrays=3 -fno-strict-overflow -fno-stack-check -fconserve-stack -fno-builtin-wcslen -fno-builtin-wcslen -Wall -Wextra -Wundef -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Werror=strict-prototypes -Wno-format-security -Wno-trigraphs -Wno-frame-address -Wno-address-of-packed-member -Wmissing-declarations -Wmissing-prototypes -Wframe-larger-than=2048 -Wno-main -Wno-dangling-pointer -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-array-bounds -Wno-stringop-overflow -Wno-alloc-size-larger-than -Wimplicit-fallthrough=5 -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wenum-conversion -Wunused -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-packed-not-aligned -Wno-format-overflow -Wno-format-truncation -Wno-stringop-truncation -Wno-override-init -Wno-missing-field-initializers -Wno-type-limits -Wno-shift-negative-value -Wno-maybe-uninitialized -Wno-sign-compare -Wno-unused-parameter -mstack-protector-guard=sysreg -mstack-protector-guard-reg=sp_el0 -mstack-protector-guard-offset=1424  -DMODULE  -DKBUILD_BASENAME='"main"' -DKBUILD_MODNAME='"usb_probe"' -D__KBUILD_MODNAME=kmod_usb_probe -c -o /Project/usb_probe_code/main.o /Project/usb_probe_code/main.c  
 
-source_/rpi-driver-study/DriverStudy/device_driver_pr/probe_module/.module-common.o := /usr/src/linux-headers-6.12.47+rpt-common-rpi/scripts/module-common.c
+source_/Project/usb_probe_code/main.o := /Project/usb_probe_code/main.c
 
-deps_/rpi-driver-study/DriverStudy/device_driver_pr/probe_module/.module-common.o := \
-    $(wildcard include/config/UNWINDER_ORC) \
-    $(wildcard include/config/MITIGATION_RETPOLINE) \
+deps_/Project/usb_probe_code/main.o := \
   /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/compiler-version.h \
     $(wildcard include/config/CC_VERSION_TEXT) \
   /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/kconfig.h \
@@ -26,6 +24,7 @@ deps_/rpi-driver-study/DriverStudy/device_driver_pr/probe_module/.module-common.
     $(wildcard include/config/CC_HAS_ASM_INLINE) \
   /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/compiler_attributes.h \
   /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/compiler-gcc.h \
+    $(wildcard include/config/MITIGATION_RETPOLINE) \
     $(wildcard include/config/ARCH_USE_BUILTIN_BSWAP) \
     $(wildcard include/config/SHADOW_CALL_STACK) \
     $(wildcard include/config/KCOV) \
@@ -968,15 +967,153 @@ deps_/rpi-driver-study/DriverStudy/device_driver_pr/probe_module/.module-common.
     $(wildcard include/config/HAVE_MOD_ARCH_SPECIFIC) \
     $(wildcard include/config/MODULES_USE_ELF_REL) \
     $(wildcard include/config/MODULES_USE_ELF_RELA) \
-  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/build-salt.h \
-    $(wildcard include/config/BUILD_SALT) \
-  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/elfnote.h \
-  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/elfnote-lto.h \
-  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/vermagic.h \
-    $(wildcard include/config/PREEMPT_BUILD) \
-  include/generated/utsrelease.h \
-  /usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/asm/vermagic.h \
+  /Project/usb_probe_code/driver.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/usb.h \
+    $(wildcard include/config/USB_MON) \
+    $(wildcard include/config/ACPI) \
+    $(wildcard include/config/PM) \
+    $(wildcard include/config/USB_LED_TRIG) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/mod_devicetable.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/uapi/linux/mei.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/uapi/linux/mei_uuid.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/usb/ch9.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/uapi/linux/usb/ch9.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/delay.h \
+  arch/arm64/include/generated/asm/delay.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/asm-generic/delay.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/interrupt.h \
+    $(wildcard include/config/IRQ_FORCED_THREADING) \
+    $(wildcard include/config/GENERIC_IRQ_PROBE) \
+    $(wildcard include/config/IRQ_TIMINGS) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/irqreturn.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/hardirq.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/context_tracking_state.h \
+    $(wildcard include/config/CONTEXT_TRACKING_USER) \
+    $(wildcard include/config/CONTEXT_TRACKING) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/ftrace_irq.h \
+    $(wildcard include/config/HWLAT_TRACER) \
+    $(wildcard include/config/OSNOISE_TRACER) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/vtime.h \
+    $(wildcard include/config/VIRT_CPU_ACCOUNTING) \
+    $(wildcard include/config/IRQ_TIME_ACCOUNTING) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/asm/hardirq.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/asm/irq.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/asm-generic/irq.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/asm/kvm_arm.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/asm/esr.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/asm-generic/hardirq.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/irq.h \
+    $(wildcard include/config/GENERIC_IRQ_EFFECTIVE_AFF_MASK) \
+    $(wildcard include/config/GENERIC_IRQ_IPI) \
+    $(wildcard include/config/IRQ_DOMAIN_HIERARCHY) \
+    $(wildcard include/config/DEPRECATED_IRQ_CPU_ONOFFLINE) \
+    $(wildcard include/config/GENERIC_IRQ_MIGRATION) \
+    $(wildcard include/config/GENERIC_PENDING_IRQ) \
+    $(wildcard include/config/HARDIRQS_SW_RESEND) \
+    $(wildcard include/config/GENERIC_IRQ_LEGACY) \
+    $(wildcard include/config/GENERIC_IRQ_CHIP) \
+    $(wildcard include/config/GENERIC_IRQ_MULTI_HANDLER) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/irqhandler.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/io.h \
+    $(wildcard include/config/HAS_IOPORT_MAP) \
+    $(wildcard include/config/PCI) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/asm/io.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/pgtable.h \
+    $(wildcard include/config/HIGHPTE) \
+    $(wildcard include/config/ARCH_HAS_NONLEAF_PMD_YOUNG) \
+    $(wildcard include/config/ARCH_HAS_HW_PTE_YOUNG) \
+    $(wildcard include/config/GUP_GET_PXX_LOW_HIGH) \
+    $(wildcard include/config/ARCH_WANT_PMD_MKWRITE) \
+    $(wildcard include/config/HAVE_ARCH_TRANSPARENT_HUGEPAGE_PUD) \
+    $(wildcard include/config/HAVE_ARCH_SOFT_DIRTY) \
+    $(wildcard include/config/ARCH_ENABLE_THP_MIGRATION) \
+    $(wildcard include/config/ARCH_HAS_PTE_DEVMAP) \
+    $(wildcard include/config/HAVE_ARCH_HUGE_VMAP) \
+    $(wildcard include/config/X86_ESPFIX64) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/asm/pgtable.h \
+    $(wildcard include/config/ARCH_SUPPORTS_PMD_PFNMAP) \
+    $(wildcard include/config/ARCH_SUPPORTS_PUD_PFNMAP) \
+    $(wildcard include/config/PAGE_TABLE_CHECK) \
+    $(wildcard include/config/ARM64_CONTPTE) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/asm/proc-fns.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/asm/tlbflush.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/mmu_notifier.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/mmap_lock.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/interval_tree.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/asm/fixmap.h \
+    $(wildcard include/config/ACPI_APEI_GHES) \
+    $(wildcard include/config/ARM_SDE_INTERFACE) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/asm-generic/fixmap.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/asm/por.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/page_table_check.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/asm-generic/pgtable_uffd.h \
+  arch/arm64/include/generated/asm/early_ioremap.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/asm-generic/early_ioremap.h \
+    $(wildcard include/config/GENERIC_EARLY_IOREMAP) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/asm-generic/io.h \
+    $(wildcard include/config/GENERIC_IOMAP) \
+    $(wildcard include/config/TRACE_MMIO_ACCESS) \
+    $(wildcard include/config/GENERIC_IOREMAP) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/asm-generic/pci_iomap.h \
+    $(wildcard include/config/NO_GENERIC_PCI_IOPORT_MAP) \
+    $(wildcard include/config/GENERIC_PCI_IOMAP) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/logic_pio.h \
+    $(wildcard include/config/INDIRECT_PIO) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/fwnode.h \
+  arch/arm64/include/generated/asm/irq_regs.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/asm-generic/irq_regs.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/irqdesc.h \
+    $(wildcard include/config/GENERIC_IRQ_STAT_SNAPSHOT) \
+    $(wildcard include/config/PM_SLEEP) \
+    $(wildcard include/config/GENERIC_IRQ_DEBUGFS) \
+    $(wildcard include/config/SPARSE_IRQ) \
+    $(wildcard include/config/IRQ_DOMAIN) \
+  arch/arm64/include/generated/asm/hw_irq.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/asm-generic/hw_irq.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/device.h \
+    $(wildcard include/config/GENERIC_MSI_IRQ) \
+    $(wildcard include/config/ENERGY_MODEL) \
+    $(wildcard include/config/PINCTRL) \
+    $(wildcard include/config/ARCH_HAS_DMA_OPS) \
+    $(wildcard include/config/DMA_DECLARE_COHERENT) \
+    $(wildcard include/config/DMA_CMA) \
+    $(wildcard include/config/SWIOTLB) \
+    $(wildcard include/config/SWIOTLB_DYNAMIC) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_DEVICE) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_CPU) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_CPU_ALL) \
+    $(wildcard include/config/DMA_OPS_BYPASS) \
+    $(wildcard include/config/DMA_NEED_SYNC) \
+    $(wildcard include/config/IOMMU_DMA) \
+    $(wildcard include/config/OF) \
+    $(wildcard include/config/DEVTMPFS) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/dev_printk.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/energy_model.h \
+    $(wildcard include/config/SCHED_DEBUG) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/sched/cpufreq.h \
+    $(wildcard include/config/CPU_FREQ) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/sched/topology.h \
+    $(wildcard include/config/SCHED_CLUSTER) \
+    $(wildcard include/config/SCHED_MC) \
+    $(wildcard include/config/CPU_FREQ_GOV_SCHEDUTIL) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/sched/idle.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/sched/sd_flags.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/ioport.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/klist.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/pm.h \
+    $(wildcard include/config/VT_CONSOLE_SLEEP) \
+    $(wildcard include/config/CXL_SUSPEND) \
+    $(wildcard include/config/PM_CLK) \
+    $(wildcard include/config/PM_GENERIC_DOMAINS) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/device/bus.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/device/class.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/device/devres.h \
+    $(wildcard include/config/HAS_IOMEM) \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/device/driver.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/arch/arm64/include/asm/device.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/pm_wakeup.h \
+  /usr/src/linux-headers-6.12.47+rpt-common-rpi/include/linux/pm_runtime.h \
 
-/rpi-driver-study/DriverStudy/device_driver_pr/probe_module/.module-common.o: $(deps_/rpi-driver-study/DriverStudy/device_driver_pr/probe_module/.module-common.o)
+/Project/usb_probe_code/main.o: $(deps_/Project/usb_probe_code/main.o)
 
-$(deps_/rpi-driver-study/DriverStudy/device_driver_pr/probe_module/.module-common.o):
+$(deps_/Project/usb_probe_code/main.o):
