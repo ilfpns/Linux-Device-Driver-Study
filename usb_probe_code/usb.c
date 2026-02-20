@@ -2,6 +2,7 @@
 #include <linux/types.h>
 #include "driver.h"
 #include <linux/init.h>
+#include <lunux/kobject.h>
 #include <linux/kernel.h>
 #include <linux/usb.h>
 #include <linux/slab.h>
