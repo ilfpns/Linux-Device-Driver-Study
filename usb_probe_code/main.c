@@ -1,12 +1,13 @@
 #include <linux/module.h>
 #include "driver.h"
+#include <linux/mod_devicetable.h>
 
 static const struct usb_device_id usb_table[] = {
         { },
 };
 MODULE_DEVICE_TABLE(usb, usb_table);
 
-static struct usb_driver usb_skel_driver = {
+struct usb_driver usb_skel_driver = {
         .name       = "USB Skel",
         .probe      = usb_probe,
         .disconnect = usb_disconnect,

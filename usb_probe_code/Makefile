@@ -1,5 +1,5 @@
 obj-m += usb_probe.o
-usb_probe-objs := main.o usb.o
+usb_probe-objs := main.o usb.o fops.o
 
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD  := $(shell pwd)

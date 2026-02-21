@@ -1,1 +1,1 @@
-savedcmd_/Project/usb_probe_code/usb_probe.o := aarch64-linux-gnu-ld -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments   -r -o /Project/usb_probe_code/usb_probe.o @/Project/usb_probe_code/usb_probe.mod 
+savedcmd_/Code/rpi-driver-study/usb_probe_code/usb_probe.o := aarch64-linux-gnu-ld -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments   -r -o /Code/rpi-driver-study/usb_probe_code/usb_probe.o @/Code/rpi-driver-study/usb_probe_code/usb_probe.mod 
