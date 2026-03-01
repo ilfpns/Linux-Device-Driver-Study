@@ -44,7 +44,8 @@ int usb_probe(struct usb_interface *interface, const struct usb_device_id *id) {
     my_usb_pack->bulk_out = bulk_out->bEndpointAddress;
 	my_usb_pack->udev = udev;
     usb_set_intfdata(interface, my_usb_pack);	
-
+    
+    usb_decide(le16_to_cpu(udev->descriptor.idVendor), le16_to_cpu(udev->descriptor.idProduct));
 	pr_info("bulk IN  endpoint AD : 0x%02x\n", bulk_in->bEndpointAddress);   // USB -> PC
 	pr_info("bulk max packet size : %d\n", usb_endpoint_maxp(bulk_in));      // 데이터 이동 단위
     pr_info("bulk OUT endpoint AD : 0x%02x\n", bulk_out->bEndpointAddress);  // PC -> USB

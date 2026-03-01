@@ -13,8 +13,12 @@ struct usb_pack {
 	__u8 bulk_out;
 };
 
+// usb.c 함수
 int usb_probe(struct usb_interface *interface, const struct usb_device_id *id);
 void usb_disconnect(struct usb_interface *interface);
+
+// module_decide.c 함수
+void usb_decide(u16 vid, u16 pid);
 
 extern const struct file_operations fops_skel;
 #endif

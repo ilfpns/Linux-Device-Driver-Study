@@ -3,7 +3,8 @@
 #include <linux/mod_devicetable.h>
 
 static const struct usb_device_id usb_table[] = {
-        { },
+    { USB_DEVICE(0x3554, 0xFA09) },
+    { },
 };
 MODULE_DEVICE_TABLE(usb, usb_table);
 
